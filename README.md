@@ -40,11 +40,12 @@ run `./gradlew cover` on POSIX or `gradlew cover` on Windows.
 
 ![test](https://raw.githubusercontent.com/gogradle/tendermint/master/coverage.png)
 
+![test](https://raw.githubusercontent.com/gogradle/tendermint/master/coveragedetail.png)
+
 # Dependencies
 
 run `./gradlew dependencies` on POSIX or `gradlew dependencies` on Windows.
 
-![test](https://raw.githubusercontent.com/gogradle/tendermint/master/coveragedetail.png)
 
 ```
 build:
