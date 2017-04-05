@@ -32,13 +32,19 @@ run `./gradlew build` on POSIX or `gradlew build` on Windows.
 
 run `./gradlew test` on POSIX or `gradlew test` on Windows.
 
+![test](https://raw.githubusercontent.com/gogradle/tendermint/master/test.png)
+
 # Coverage 
 
 run `./gradlew cover` on POSIX or `gradlew cover` on Windows.
 
+![test](https://raw.githubusercontent.com/gogradle/tendermint/master/coverage.png)
+
 # Dependencies
 
 run `./gradlew dependencies` on POSIX or `gradlew dependencies` on Windows.
+
+![test](https://raw.githubusercontent.com/gogradle/tendermint/master/coveragedetail.png)
 
 ```
 build:
