@@ -1,12 +1,12 @@
 plugins {
-    id 'com.github.blindpirate.gogradle' version '0.4.0'
+    id 'com.github.blindpirate.gogradle' version '0.4.2'
 }
 
 golang {
     packagePath = 'github.com/tendermint/tendermint' 
 }
 
-build {
+goBuild {
     doLast {
         go 'build -o ./${GOOS}_${GOARCH}_${PROJECT_NAME}${GOEXE} github.com/tendermint/tendermint/cmd/tendermint'
     }

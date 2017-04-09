@@ -9,14 +9,14 @@ Just install JDK and create `build.gradle` with following contents:
 
 ```
 plugins {
-    id 'com.github.blindpirate.gogradle' version '0.4.0'
+    id 'com.github.blindpirate.gogradle' version '0.4.2'
 }
 
 golang {
     packagePath = 'github.com/tendermint/tendermint'
 }
 
-build {
+goBuild {
     doLast {
         go 'build -o ./${GOOS}_${GOARCH}_${PROJECT_NAME}${GOEXE} github.com/tendermint/tendermint/cmd/tendermint'
     }
@@ -25,18 +25,18 @@ build {
 
 # Build
 
-run `./gradlew build` on POSIX or `gradlew build` on Windows.
+run `./gradlew goBuild` on POSIX or `gradlew goBuild` on Windows.
 
 
 # Test
 
-run `./gradlew test` on POSIX or `gradlew test` on Windows.
+run `./gradlew goTest` on POSIX or `gradlew goTest` on Windows.
 
 ![test](https://raw.githubusercontent.com/gogradle/tendermint/master/test.png)
 
 # Coverage 
 
-run `./gradlew cover` on POSIX or `gradlew cover` on Windows.
+run `./gradlew goCover` on POSIX or `gradlew goCover` on Windows.
 
 ![test](https://raw.githubusercontent.com/gogradle/tendermint/master/coverage.png)
 
@@ -44,7 +44,7 @@ run `./gradlew cover` on POSIX or `gradlew cover` on Windows.
 
 # Dependencies
 
-run `./gradlew dependencies` on POSIX or `gradlew dependencies` on Windows.
+run `./gradlew goDependencies` on POSIX or `gradlew goDependencies` on Windows.
 
 
 ```
